@@ -18,8 +18,8 @@ script "start": "node ./bin/www"=>>"start": "nodemon ./bin/www"
  var pool = mysql.createPool({//创建数据池     
         host: 'localhost', //数据库所在服务器ip     
 	user: 'root', //数据库登录名       
-	password: 'WANGZIQIANG@0520',       
-	//数据库连接密码 database: 'intmall' //使用的数据库名     
+	password: 'xxxxx',//数据库连接密码    
+	database: 'intmall' //使用的数据库名     
 	});
 
 function query(sql, callback) {//定义数据查询方法
