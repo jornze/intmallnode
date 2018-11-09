@@ -33,9 +33,10 @@ function query(sql, callback) {//定义数据查询方法
 }
 exports.query = query;//对外暴露接口方法
 ```
-5.在对应router文件中调用数据库查询方法 将数据库数据以json的格式返回给前台使用 首先引入连接数据库js文件 var sql=require('../conmen/mysql');
+5.在对应router文件中调用数据库查询方法 将数据库数据以json的格式返回给前台使用 首先引入连接数据库js文件
 
-```router.get('/api', function(req, res, next) {      
+``` var sql=require('../conmen/mysql');
+router.get('/api', function(req, res, next) {      
        sql.query('select * from totalcoin',function(err,rows){    
 	          if(err){       
 	            throw err;      
