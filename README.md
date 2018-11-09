@@ -1,4 +1,6 @@
-```1.全局安装express项目应用生成器 （脚手架） npm install express-generator -g 初始化项目 express projectName 项目依赖安装 cd projectName cnpm i 运行项目 set debug=projectName & npm start                                                                                      
+```
+
+1.全局安装express项目应用生成器 （脚手架） npm install express-generator -g 初始化项目 express projectName 项目依赖安装 cd projectName cnpm i 运行项目 set debug=projectName & npm start                                                                                      
 2.开发阶段，为方便开发 代码保存后项目重启--热更新 cnpm i nodemon -D 此时需要修改项目的启动脚本 工程目录package.json里的script "start": "node ./bin/www"=>>"start": "nodemon ./bin/www"         
 3.启动项目 会发现文件修改保存后 nodejs会自动重启
 
